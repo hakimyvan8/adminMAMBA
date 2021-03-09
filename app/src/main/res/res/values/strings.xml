@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Admin</string>
+    <string name="welcome_admin">Welcome Admin</string>
+</resources>

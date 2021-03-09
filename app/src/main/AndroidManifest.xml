@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.admin">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Admin"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:replace="android:label"
+        android:theme="@style/AppTheme">
+        <activity android:name=".EditProductActivity"/>
+        <activity android:name=".AddProductActivity" />
+        <activity android:name=".RegisterAdminActivity" />
+        <activity android:name=".AddAdminsActivity" />
+        <activity android:name=".AdminNewsActivity" />
+        <activity android:name=".ManageProductsActivity" />
+        <activity android:name=".ManageOrdersActivity" />
+        <activity android:name=".ManageUsersActivity" />
+        <activity android:name=".AdminLoungeActivity" />
+        <activity android:name=".MainAdminActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

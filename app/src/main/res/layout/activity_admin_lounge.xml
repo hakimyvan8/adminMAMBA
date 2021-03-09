@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLoungeActivity">
+
+
+    <TextView
+        android:id="@+id/Lan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_admin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/AddAdmins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/Lan"
+        android:drawableStart="@drawable/ic_admins"
+        android:drawableLeft="@drawable/ic_admins"
+        android:drawablePadding="10dp"
+        android:text="Manage Admins"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/manage_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/AddAdmins"
+            android:drawableStart="@drawable/ic_addperson"
+            android:drawableLeft="@drawable/ic_addperson"
+            android:drawablePadding="10dp"
+            android:text="Manage Users"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/manage_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_below="@+id/manage_users"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:drawableStart="@drawable/ic_receipt"
+            android:text="Manage Orders"
+            android:drawableLeft="@drawable/ic_receipt" />
+
+        <TextView
+            android:id="@+id/manage_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/manage_orders"
+            android:drawableStart="@drawable/ic_box"
+            android:drawableLeft="@drawable/ic_box"
+            android:drawablePadding="10dp"
+            android:text="Manage Stock"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/AdminNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/manage_products"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:drawableStart="@drawable/ic_forum"
+            android:text="News/Forum"
+            android:drawableLeft="@drawable/ic_forum" />
+
+
+    <Button
+        android:id="@+id/Admin_logout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

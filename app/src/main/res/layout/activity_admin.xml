@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel12"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montserrat"
+            android:gravity="start"
+            android:text="@string/admin"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel12">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:background="@drawable/shape_rect02"
+                android:hint="phone"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#616161"
+                android:drawableLeft="@drawable/ic_phone"
+                android:autofillHints="" />
+
+
+            <EditText
+                android:id="@+id/login_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_phone"
+                android:layout_margin="10dp"
+                android:drawableStart="@drawable/ic_lock"
+                android:background="@drawable/shape_rect02"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:textColorHint="#616161"
+                android:drawableLeft="@drawable/ic_lock"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_below="@+id/login_Password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="Login Admin"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/adminReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/login_button"
+                android:text="Register Admin"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
